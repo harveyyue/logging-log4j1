@@ -157,7 +157,7 @@ public class DailyRollingFileAppender extends FileAppender {
      The date pattern. By default, the pattern is set to
      "'.'yyyy-MM-dd" meaning daily rollover.
    */
-  private String datePattern = "'.'yyyy-MM-dd";
+  protected String datePattern = "'.'yyyy-MM-dd";
 
   /**
      The log file will be renamed to the value of the
@@ -169,7 +169,7 @@ public class DailyRollingFileAppender extends FileAppender {
      The precise time when a rollover occurs depends on logging
      activity. 
   */
-  private String scheduledFilename;
+  protected String scheduledFilename;
 
   /**
      The next time we estimate a rollover should occur. */

@@ -93,66 +93,66 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.5</version>
-        <configuration>
-          <workingDirectory>tests</workingDirectory>
-          <reportFormat>plain</reportFormat>
-          <forkMode>pertest</forkMode>
-          <skip>true</skip>
-          <includes>
-            <include>org/apache/log4j/LevelTest.java</include>
-            <include>org/apache/log4j/PriorityTest.java</include>
-            <include>org/apache/log4j/CategoryTest.java</include>
-            <include>org/apache/log4j/FileAppenderTest.java</include>
-            <include>org/apache/log4j/LogManagerTest.java</include>
-            <include>org/apache/log4j/helpers.LogLogTest.java</include>
-            <include>org/apache/log4j/LayoutTest.java</include>
-            <include>org/apache/log4j/helpers.DateLayoutTest.java</include>
-            <include>org/apache/log4j/TTCCLayoutTest.java</include>
-            <include>org/apache/log4j/xml.XMLLayoutTest.java</include>
-            <include>org/apache/log4j/HTMLLayoutTest.java</include>
-            <include>org/apache/log4j/PatternLayoutTest.java</include>
-            <include>org/apache/log4j/spi.LoggingEventTest.java</include>
-            <include>org/apache/log4j/spi.ThrowableInformationTest.java</include>
-            <include>org/apache/log4j/spi.LocationInfoTest.java</include>
-            <include>org/apache/log4j/PropertyConfiguratorTest.java</include>
-            <include>org/apache/log4j/MinimumTestCase.java</include>
-            <include>org/apache/log4j/LoggerTestCase.java</include>
-            <include>org/apache/log4j/PatternLayoutTestCase.java</include>
-            <include>org/apache/log4j/HierarchyThresholdTestCase.java</include>
-            <include>org/apache/log4j/xml/DOMTestCase.java</include>
-            <include>org/apache/log4j/xml/CustomLevelTestCase.java</include>
-            <include>org/apache/log4j/customLogger/XLoggerTestCase.java</include>
-            <!-- DefaultInit  -->
-            <!-- SocketServer -->
-            <include>org/apache/log4j/xml/XMLLayoutTestCase.java</include>
-            <include>org/apache/log4j/xml/AsyncAppenderTestCase.java</include>
-            <include>org/apache/log4j/varia/LevelMatchFilterTestCase.java</include>
-            <!--   ErrorHandlerTestCase is not run in Ant build either
-            <include>org/apache/log4j/varia/ErrorHandlerTestCase.java</include>
-            -->
-            <!-- include>org/apache/log4j/helpers/OptionConverterTestCase.java</include -->
-            <include>org/apache/log4j/helpers/BoundedFIFOTestCase.java</include>
-            <include>org/apache/log4j/helpers/CyclicBufferTestCase.java</include>
-            <include>org/apache/log4j/helpers/PatternParserTestCase.java</include>
-            <include>org/apache/log4j/or/ORTestCase.java</include>
-            <include>org/apache/log4j/DRFATestCase.java</include>
-            <include>org/apache/log4j/RFATestCase.java</include>
-            <include>org/apache/log4j/varia/ERFATestCase.java</include>
-            <include>org/apache/log4j/net/SyslogAppenderTest</include>
-            <include>org/apache/log4j/nt/NTEventLogAppenderTest</include>
-            <include>org/apache/log4j/net/SocketAppenderTest</include>
-          </includes>
-        </configuration>
-      </plugin>
+<!--      <plugin>-->
+<!--        <artifactId>maven-surefire-plugin</artifactId>-->
+<!--        <version>2.5</version>-->
+<!--        <configuration>-->
+<!--          <workingDirectory>tests</workingDirectory>-->
+<!--          <reportFormat>plain</reportFormat>-->
+<!--          <forkMode>pertest</forkMode>-->
+<!--          <skip>true</skip>-->
+<!--          <includes>-->
+<!--            <include>org/apache/log4j/LevelTest.java</include>-->
+<!--            <include>org/apache/log4j/PriorityTest.java</include>-->
+<!--            <include>org/apache/log4j/CategoryTest.java</include>-->
+<!--            <include>org/apache/log4j/FileAppenderTest.java</include>-->
+<!--            <include>org/apache/log4j/LogManagerTest.java</include>-->
+<!--            <include>org/apache/log4j/helpers.LogLogTest.java</include>-->
+<!--            <include>org/apache/log4j/LayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/helpers.DateLayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/TTCCLayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/xml.XMLLayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/HTMLLayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/PatternLayoutTest.java</include>-->
+<!--            <include>org/apache/log4j/spi.LoggingEventTest.java</include>-->
+<!--            <include>org/apache/log4j/spi.ThrowableInformationTest.java</include>-->
+<!--            <include>org/apache/log4j/spi.LocationInfoTest.java</include>-->
+<!--            <include>org/apache/log4j/PropertyConfiguratorTest.java</include>-->
+<!--            <include>org/apache/log4j/MinimumTestCase.java</include>-->
+<!--            <include>org/apache/log4j/LoggerTestCase.java</include>-->
+<!--            <include>org/apache/log4j/PatternLayoutTestCase.java</include>-->
+<!--            <include>org/apache/log4j/HierarchyThresholdTestCase.java</include>-->
+<!--            <include>org/apache/log4j/xml/DOMTestCase.java</include>-->
+<!--            <include>org/apache/log4j/xml/CustomLevelTestCase.java</include>-->
+<!--            <include>org/apache/log4j/customLogger/XLoggerTestCase.java</include>-->
+<!--            &lt;!&ndash; DefaultInit  &ndash;&gt;-->
+<!--            &lt;!&ndash; SocketServer &ndash;&gt;-->
+<!--            <include>org/apache/log4j/xml/XMLLayoutTestCase.java</include>-->
+<!--            <include>org/apache/log4j/xml/AsyncAppenderTestCase.java</include>-->
+<!--            <include>org/apache/log4j/varia/LevelMatchFilterTestCase.java</include>-->
+<!--            &lt;!&ndash;   ErrorHandlerTestCase is not run in Ant build either-->
+<!--            <include>org/apache/log4j/varia/ErrorHandlerTestCase.java</include>-->
+<!--            &ndash;&gt;-->
+<!--            &lt;!&ndash; include>org/apache/log4j/helpers/OptionConverterTestCase.java</include &ndash;&gt;-->
+<!--            <include>org/apache/log4j/helpers/BoundedFIFOTestCase.java</include>-->
+<!--            <include>org/apache/log4j/helpers/CyclicBufferTestCase.java</include>-->
+<!--            <include>org/apache/log4j/helpers/PatternParserTestCase.java</include>-->
+<!--            <include>org/apache/log4j/or/ORTestCase.java</include>-->
+<!--            <include>org/apache/log4j/DRFATestCase.java</include>-->
+<!--            <include>org/apache/log4j/RFATestCase.java</include>-->
+<!--            <include>org/apache/log4j/varia/ERFATestCase.java</include>-->
+<!--            <include>org/apache/log4j/net/SyslogAppenderTest</include>-->
+<!--            <include>org/apache/log4j/nt/NTEventLogAppenderTest</include>-->
+<!--            <include>org/apache/log4j/net/SocketAppenderTest</include>-->
+<!--          </includes>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.1</version>
         <configuration>
-          <source>1.4</source>
-          <target>1.4</target>
+          <source>1.8</source>
+          <target>1.8</target>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
@@ -347,31 +347,31 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
         </executions>
 
       </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
-        <configuration>
-          <docfilessubdirs>true</docfilessubdirs>
-          <excludedocfilessubdir>.svn</excludedocfilessubdir>
-          <encoding>UTF-8</encoding>
-          <docEncoding>UTF-8</docEncoding>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>jar</goal>
-              <goal>javadoc</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>site</id>
-	    <phase>pre-site</phase>
-            <goals>
-              <goal>javadoc</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--        <version>2.7</version>-->
+<!--        <configuration>-->
+<!--          <docfilessubdirs>true</docfilessubdirs>-->
+<!--          <excludedocfilessubdir>.svn</excludedocfilessubdir>-->
+<!--          <encoding>UTF-8</encoding>-->
+<!--          <docEncoding>UTF-8</docEncoding>-->
+<!--        </configuration>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <goals>-->
+<!--              <goal>jar</goal>-->
+<!--              <goal>javadoc</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--          <execution>-->
+<!--            <id>site</id>-->
+<!--	    <phase>pre-site</phase>-->
+<!--            <goals>-->
+<!--              <goal>javadoc</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.0-beta-9</version>
@@ -424,7 +424,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
-        <version>2.1.0</version>
+        <version>5.1.1</version>
         <extensions>true</extensions>
         <configuration>
             <instructions>
@@ -444,22 +444,22 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
             </instructions>
         </configuration>
       </plugin>
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.1</version>
-        <configuration>
-	       <templateFile>${basedir}/src/site/maven-site.vm</templateFile>
-           <excludeDefaults>true</excludeDefaults>
-        </configuration>
-        <executions>
-          <execution>
-		      <phase>package</phase>		
-            <goals>
-               <goal>site</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+<!--      <plugin>-->
+<!--        <artifactId>maven-site-plugin</artifactId>-->
+<!--        <version>3.1</version>-->
+<!--        <configuration>-->
+<!--	       <templateFile>${basedir}/src/site/maven-site.vm</templateFile>-->
+<!--           <excludeDefaults>true</excludeDefaults>-->
+<!--        </configuration>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--		      <phase>package</phase>		-->
+<!--            <goals>-->
+<!--               <goal>site</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--      </plugin>-->
     </plugins>
     <testSourceDirectory>tests/src/java</testSourceDirectory>
     <testResources>
@@ -512,8 +512,8 @@ target platform and specify -Dntdll_target=msbuild on the mvn command line.
         </os>
       </activation>
       <properties>
-        <tools.jar>${java.home}/../Classes/classes.jar</tools.jar>
-        <m2_repo>${user.home}/.m2/repository</m2_repo>
+        <tools.jar>/Library/Java/JavaVirtualMachines/jdk1.8.0_361.jdk/Contents/Home/lib/tools.jar</tools.jar>
+        <m2_repo>/Users/sh00704ml/software/repository</m2_repo>
         <ntdll_target>build</ntdll_target>
       </properties>
     </profile>
